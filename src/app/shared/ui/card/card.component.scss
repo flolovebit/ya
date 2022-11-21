@@ -74,7 +74,35 @@ figure {
 @media screen and (max-width: 500px) {
   article:not(.detail) {
     container: card/inline-size;
+    
   }
+
+}
+
+@media screen and (max-width: 500px) {
+  article{
+  
+    &.detail {
+      h2 {
+        font-size: 2.5rem;
+      }
+  
+      p {
+        font-size: 1.25rem;
+      }
+      min-height: 400px;
+
+      figure {
+        aspect-ratio: 16 / 9;
+        img {
+         // aspect-ratio: 1;
+          object-fit: cover;
+        }
+      }
+     
+    }
+  }
+
 }
 
 @container card (min-width: 240px) {
