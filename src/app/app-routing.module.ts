@@ -16,6 +16,11 @@ const routes: Routes = [
     path: 'error/:type',
     component: ErrorComponent,
   },
+  {
+    path: '**',
+    redirectTo:'error/404'
+    
+  },
 ];
 
 @NgModule({
