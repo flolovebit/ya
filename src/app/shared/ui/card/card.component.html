@@ -1,0 +1,13 @@
+<article class="{{mode}}">
+  <a class="article-wrapper"   [routerLink]="id? [id] : ['/']">  
+    <figure >
+      <img loading="lazy" src="{{ img }}?id={{ id }}" alt="{{ name }}" />
+    </figure>
+    <div class="article-body">
+      <h2>{{ name }}</h2>
+      <p>
+        {{ title }}
+      </p>
+    </div>
+  </a>
+</article>

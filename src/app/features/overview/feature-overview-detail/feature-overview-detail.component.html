@@ -1,0 +1,10 @@
+<section *ngIf="detail$ | async; let item">
+  <app-card
+    [img]="item.avatar"
+    [name]="item.name"
+    [title]="item.type"
+    [mode]="'detail'"
+  ></app-card>
+</section>
+
+<img *ngIf="!(detail$| async)" src="/assets/loader.svg" class="loader" />

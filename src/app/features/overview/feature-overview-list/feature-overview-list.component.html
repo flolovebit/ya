@@ -1,0 +1,13 @@
+<section class="articles" *ngIf="vmArticles$ | async as vm">
+  <app-card
+    *ngFor="let entity of vm.entities"
+    [title]="entity.type"
+    [img]="entity.avatar"
+    [name]="entity.name"
+    [id]="entity.id"
+  ></app-card>
+
+  <h4 *ngIf="(loading$ | async) && vm.entities.length === 0">No items</h4>
+</section>
+<a *ngIf="(loading$ | async)" class="btn" (click)="update()">Update</a>
+<img *ngIf="!(loading$ | async)" src="/assets/loader.svg" class="loader" />

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap:wght@400;700");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800");
+:root {
+  --white: #f9f9f9;
+  --black: #081f32;
+  --gray: #6e798c;
+  --header-height: 12vw;
+  --header-half: 6vw;
+  --gradient-in: #00cccc 4.35%;
+  --gradient-out: #0098c8 96.43%;
+  --blue: #27303e;
+  --silver: #aab0b4;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  padding-top: var(--header-height);
+  app-root {
+    min-height: calc(100vh - var(--header-height));
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --header-height: 8vw;
+    --header-half: 4vw;
+  }
+}
+
+@media screen and (min-width: 2080px) {
+  :root {
+    --header-height: 5vw;
+    --header-half: 2.5vw;
+  }
+}
+.loader{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display:inline-block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-50px;
+  margin-top:-50px;
+}

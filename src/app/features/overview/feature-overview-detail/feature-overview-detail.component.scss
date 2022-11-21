@@ -1,0 +1,12 @@
+
+section {
+    display: grid;
+    max-width: 1024px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, min(240px, 1fr));
+    gap: 48px;
+    padding-top:50px;
+  }
+
+  
